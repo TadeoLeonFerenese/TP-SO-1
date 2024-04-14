@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>SistemasOpertativos</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&family=Pixelify+Sans:wght@400..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Play:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Introduccion a los sistemas operativos</h1>
+    <img src="img/Logo2.png" alt="Logo" class="logo-derecha">
+  </header>
+  <div class="container">
+    <aside>
+      <h2>Indice</h2>
+      <ul>
+        <li><a href="index.html">Primer consigna</a></li>
+        <li><a href="segunda.html">Segunda consigna</a></li>
+        <li><a href="tercera.html">Tercer consigna</a></li>
+        
+      </ul>
+      <h2>Ejercicios</h2>
+      <ul>
+        <li><a href="ejer1.html">Función de Abstracción del Hardware</a></li>
+        <li><a href="ejer2.html">Organización, Estructura y Servicios del Sistema Operativo</a></li>
+        <li><a href="ejer3.html">Tipos de Sistemas Operativos</a></li>
+        
+      </ul>
+    </aside>
+    <main>
+      <article>
+        <h2>Tipos de Sistemas Operativos</h2>
+        <br />
+        <h3>A- Compara y contrasta los sistemas operativos monolíticos y los sistemas de tiempo real en términos de su arquitectura y prioridades de ejecución.</h3>
+        <p class="p1">Sistemas Operativos Monolíticos:
+
+            Arquitectura:
+            Los sistemas operativos monolíticos tienen una arquitectura donde todos los componentes del sistema operativo, como el kernel, los controladores de dispositivos y los servicios del sistema, se ejecutan en el espacio del núcleo o kernel.
+            Todos los componentes están integrados en un solo ejecutable y comparten un espacio de direcciones común.
+            
+            Prioridades de Ejecución:
+            En los sistemas operativos monolíticos, no hay una prioridad de ejecución definida para tareas críticas. Todas las tareas compiten por recursos de manera similar, y el sistema operativo se encarga de asignar tiempo de CPU a cada tarea en función de sus necesidades y prioridades.
+            
+            Sistemas de Tiempo Real:
+            
+            Arquitectura:
+            Los sistemas de tiempo real tienen una arquitectura diseñada para garantizar que las tareas críticas se ejecuten en tiempos determinados y predecibles.
+            Suelen tener un kernel altamente optimizado y modular que proporciona servicios esenciales de tiempo real, como la planificación de tareas y la gestión de interrupciones.
+            
+            Prioridades de Ejecución:
+            En los sistemas de tiempo real, las tareas críticas tienen prioridad sobre otras tareas. El sistema operativo garantiza que las tareas críticas se completen dentro de un tiempo determinado, conocido como tiempo de respuesta o latencia máxima.
+            Los sistemas de tiempo real suelen utilizar algoritmos de planificación deterministas, como el algoritmo de prioridad fija o el algoritmo de tiempo compartido cíclico, para garantizar que las tareas críticas se ejecuten en tiempo real.
+            
+            Comparación:
+            Los sistemas operativos monolíticos son más flexibles y pueden ejecutar una amplia variedad de aplicaciones y servicios, pero no están optimizados para tareas críticas en tiempo real.
+            Los sistemas de tiempo real están diseñados específicamente para aplicaciones donde la predictibilidad y la fiabilidad son críticas, como sistemas de control industrial, automotrices o médicos.
+            Mientras que los sistemas operativos monolíticos pueden tener tiempos de respuesta impredecibles debido a la naturaleza de la planificación de tareas, los sistemas de tiempo real garantizan tiempos de respuesta predecibles y consistentes para tareas críticas.
+            
+            
+            </p>
+            
+            
+      </article>
+      <article>
+        <br>
+        <h3>
+            B- Investiga un ejemplo de sistema operativo distribuido y describe cómo maneja la comunicación entre sus nodos y la sincronización de tareas.
+            </h3>
+        <p class="p1">Un ejemplo de sistema operativo distribuido es el Apache Hadoop, ampliamente utilizado para el procesamiento distribuido de grandes conjuntos de datos en entornos distribuidos. Hadoop consta de varios componentes, siendo el más destacado Hadoop Distributed File System (HDFS) para el almacenamiento distribuido y el marco de procesamiento distribuido MapReduce para el procesamiento paralelo de datos.
+
+            Comunicación entre nodos: Hadoop utiliza un modelo de comunicación basado en el principio de "divide y vencerás". Los nodos del clúster Hadoop se comunican entre sí a través de un protocolo de red utilizando mensajes para coordinar tareas y transferir datos. La comunicación se realiza de manera eficiente mediante la subdivisión de tareas en bloques de datos que se distribuyen entre los nodos del clúster para su procesamiento paralelo. Esto permite que los nodos se comuniquen entre sí para compartir resultados parciales y coordinar la ejecución de tareas.
+            Sincronización de tareas: Hadoop utiliza técnicas de sincronización y coordinación para garantizar que las tareas se ejecuten de manera ordenada y eficiente en un entorno distribuido. Por ejemplo, en el marco de procesamiento MapReduce, el coordinador de tareas asigna y supervisa la ejecución de tareas de map y reduce en los nodos del clúster. Los nodos informan al coordinador sobre el progreso de sus tareas y envían resultados parciales cuando sea necesario. Además, Hadoop utiliza mecanismos de tolerancia a fallos para garantizar la integridad y la disponibilidad de los datos, lo que implica la replicación de datos entre nodos y la reasignación de tareas en caso de fallo de un nodo.
+            
+            En resumen, Apache Hadoop maneja la comunicación entre sus nodos mediante un protocolo de red eficiente y la subdivisión de tareas para el procesamiento paralelo de datos. La sincronización de tareas se logra a través de la coordinación centralizada y la tolerancia a fallos para garantizar la integridad y la disponibilidad de los datos en un entorno distribuido.
+            
+
+            </p>
+           
+            <
+            
+    </article>
+    </main>
+  </div>
+  <footer>
+    <p>Derechos de autor © 2024 -Unab- SistemasOpertaivos</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>SistemasOpertativos</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&family=Pixelify+Sans:wght@400..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Play:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Introduccion a los sistemas operativos</h1>
+    <img src="img/Logo2.png" alt="Logo" class="logo-derecha">
+  </header>
+  <div class="container">
+    <aside>
+      <h2>Indice</h2>
+      <ul>
+        <li><a href="index.html">Primer consigna</a></li>
+        <li><a href="segunda.html">Segunda consigna</a></li>
+        <li><a href="tercera.html">Tercer consigna</a></li>
+        
+      </ul>
+      <h2>Ejercicios</h2>
+      <ul>
+        <li><a href="ejer1.html">Función de Abstracción del Hardware</a></li>
+        <li><a href="ejer2.html">Organización, Estructura y Servicios del Sistema Operativo</a></li>
+        <li><a href="ejer3.html">Tipos de Sistemas Operativos</a></li>
+        
+      </ul>
+    </aside>
+    <main>
+      <article>
+        <h2>Función de Abstracción del Hardwares</h2>
+        <br />
+        <h3>A- Describe cómo un sistema operativo utiliza la abstracción del hardware para gestionar recursos como la memoria y el procesador.</h3>
+        <p class="p1">Un sistema operativo utiliza la abstracción del hardware para gestionar recursos como la memoria y el procesador mediante la creación de capas de abstracción entre las aplicaciones y el hardware físico. Esto se logra a través de los siguientes mecanismos:
+
+            Gestión de memoria: El sistema operativo asigna y gestiona la memoria física del sistema utilizando técnicas como la paginación y la segmentación. Las aplicaciones interactúan con la memoria a través de direcciones virtuales, que son mapeadas por el sistema operativo a direcciones físicas reales. Esto permite que múltiples aplicaciones se ejecuten simultáneamente sin interferir entre sí y sin necesidad de conocer los detalles específicos de la memoria física.
+            
+            
+            Planificación del procesador: El sistema operativo controla el acceso al procesador y asigna tiempo de CPU a cada proceso en ejecución utilizando algoritmos de planificación de procesos. Las aplicaciones no necesitan conocer los detalles de la arquitectura del procesador ni competir directamente por su uso, ya que el sistema operativo se encarga de administrar los recursos de manera equitativa y eficiente.
+            
+            
+            En resumen, la abstracción del hardware proporcionada por el sistema operativo permite a las aplicaciones interactuar con los recursos del sistema de manera uniforme y sin tener que preocuparse por los detalles de implementación subyacentes. Esto promueve la portabilidad y la eficiencia al tiempo que simplifica el desarrollo y la ejecución de software en una variedad de entornos de hardware.
+            
+            
+            </p>
+            
+            
+      </article>
+      <article>
+        <br>
+        <h3>B- Enumera al menos tres ejemplos de cómo la abstracción del hardware facilita la portabilidad de las aplicaciones en diferentes sistemas.
+        </h3>
+        <p class="p1">
+            Interfaces de Programación de Aplicaciones (API): Las API proporcionan una capa de abstracción entre las aplicaciones y el hardware subyacente. Las aplicaciones pueden interactuar con funciones y servicios estandarizados a través de las API, sin necesidad de conocer los detalles específicos del hardware subyacente. Esto facilita la portabilidad de las aplicaciones, ya que pueden ejecutarse en diferentes sistemas operativos o arquitecturas de hardware siempre que se implemente la misma API.
+            
+            Máquinas Virtuales (VM): Las máquinas virtuales permiten ejecutar aplicaciones en un entorno virtualizado que simula un conjunto específico de hardware, independientemente del hardware físico subyacente. Esto significa que las aplicaciones pueden ser desarrolladas y probadas en una máquina virtual y luego desplegadas en diferentes sistemas con una mínima modificación, ya que la abstracción del hardware proporcionada por la máquina virtual oculta las diferencias de hardware.
+            
+            Bibliotecas de Abstracción de Hardware (HAL): Las bibliotecas de HAL proporcionan una capa de abstracción entre el software y el hardware subyacente, permitiendo que las aplicaciones accedan a los recursos de hardware de manera uniforme a través de una interfaz estándar. Esto permite que las aplicaciones sean portables entre diferentes dispositivos o sistemas, ya que la biblioteca de HAL se encarga de adaptar las llamadas de la aplicación al hardware específico en cada caso.
+            
+
+            </p>
+           
+            
+            
+    </article>
+    </main>
+  </div>
+  <footer>
+    <p>Derechos de autor © 2024 -Unab- SistemasOpertaivos</p>
+  </footer>
+</body>
+</html>
