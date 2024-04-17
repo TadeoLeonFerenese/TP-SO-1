@@ -3,6 +3,13 @@ body {
     margin: 0;
     padding: 0;
     background-color: #b4e7ff; 
+
+    background-image: url("img/white-abstract-background-free-video.jpg"); 
+    background-position:center center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
    }
   
   
@@ -37,6 +44,7 @@ body {
     width: 15%;
     background-color: #cbecfc;
     padding: 20px;
+    
   }
   
   aside h2 {
